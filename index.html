@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pyrmid</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            body{
+                color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <p>Open console for output</p>
+        
+        <script>
+          
+           var number= prompt("Enter a number to print pyramid");
+           var stars= "";
+
+           for (var i = 1; i <= number; i++) {
+               for (var j = 1; j <= number - i; j++) {
+                   stars += "&nbsp";
+               }
+            
+               for (var n = 0; n < 2 * i - 1; n++) {
+                  stars += "*";
+               }
+               stars += "<br />";
+            }
+
+            console.log(stars);
+            document.write(stars);
+    
+        </script>
+    </body>
+</html>
